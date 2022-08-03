@@ -33,7 +33,7 @@ List geraNumeroMeses(Map mapa, [bool primos = false]) {
 List geraNomeMeses(Map mapa, [bool? tamanho]) {
   List lista = mapa.values.toList();
   if (tamanho == true) {
-    print(lista.where((x) => x.length >= 6).toList());
+    print(lista.where((x) => x.length <= 6).toList());
   }
   return lista;
 }
